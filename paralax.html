@@ -13,7 +13,6 @@
 body{font: "Ubuntu", sans-serif 16px/20px;background:#8A8451;}
 h1 { font-family: "Ubuntu Condensed", Arial, serif; font-weight: 400; font-size:400%}
 section{
-background-image: url("images/moelwyn-nos.jpg");
 background-attachment: fixed;
 background-origin: initial;
 background-clip: initial;
@@ -37,6 +36,21 @@ min-height:1080px;
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
+<script>
+jQuery(document).ready(function(){
+$objWindow = $(window);
+$('section[data-type="background"]').each(function(){
+var $bgObj = $(this);
+$(window).scroll(function() {
+var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
+var coords = '100% '+ yPos + 'px';
+// Change the position of background
+$bgObj.css({ backgroundPosition: coords });
+ 
+});
+ 
+});
+});
+</script>
 </body>
 </html>
