@@ -12,7 +12,7 @@ section{
 	background-size: cover;
 	background-size: contain;
 	background-repeat:no-repeat;
-	background-position:100% 0;
+	background-position:100% 50%;
 	position:relative;
 	height:1080px;
 	/*height:40rem;*/
