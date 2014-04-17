@@ -10,6 +10,7 @@ section{
 	background-origin: initial;
 	background-clip: initial;
 	background-size: cover;
+	background-size: contain;
 	background-repeat:no-repeat;
 	background-position:100% 0;
 	position:relative;
