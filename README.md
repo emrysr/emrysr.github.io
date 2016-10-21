@@ -1,4 +1,4 @@
-# [http://emrys.cymru](emrys.cymru)
+# [emrys.cymru](http://emrys.cymru)
 Repo for my personal website. Currently this github page re-directs to my website using the CNAME file.
 
 ## Objective
