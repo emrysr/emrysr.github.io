@@ -8,13 +8,11 @@ This my personal website
 
 ## Showcase of my work
 
-* Built with [VisualStudio Code](http://microsoft.com) (never thought I'd be using VS again!)
-* Created with [create-react-app](https://github.com/facebookincubator/create-react-app) by [facebookincubator](https://github.com/facebookincubator)
-* Uses React
 * node.js
 * docker
 * progressive web apps
 * js ES2015 (ES6)
+* react.js
 * webpack
 * bower
 * angular
@@ -26,3 +24,8 @@ This my personal website
 * MongoDB
 * firebase
 * markdown documentation
+
+## Tools
+
+* Built with [VisualStudio Code](http://microsoft.com) (never thought I'd be using VS again!)
+* Created with [create-react-app](https://github.com/facebookincubator/create-react-app) by [facebookincubator](https://github.com/facebookincubator)
