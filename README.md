@@ -1,5 +1,5 @@
 # [emrys.cymru](http://emrys.cymru)
-Repo for my personal website. Currently this github page re-directs to my website using the CNAME file.
+Repo for my personal website. Currently this github page re-directs to my website using the [CNAME](http://emrysr.github.io) file.
 
 ## Objective
 This my personal website to show off my work
