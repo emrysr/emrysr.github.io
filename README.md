@@ -1,33 +1,38 @@
 # [emrys.cymru](http://emrys.cymru)
-Repo for my personal website. Currently this github page re-directs to my website using the [CNAME](http://emrysr.github.io) file.
+Repo for my personal website. 
+Currently this is hosted by github.io.
+
+I've set an A record for a subdomain [github.emrys.cyrmu](https://github.emrys.cymru) to point to (204.232.175.78)
+
+This is then routed to this repo using the [CNAME](https://github.com/emrysr/emrysr.github.io/blob/master/CNAME) file.
 
 ## Objective
 This my personal website to show off my work
 
-**[See it here](http://emrys.cymru/)**
+**[See it here](http://github.emrys.cymru/)**
 
 ### Showcase of my work
 
-* node.js
+* vue.js
 * docker
 * progressive web apps
-* js ES2015 (ES6)
-* react.js
+* js (ES6)
+* PHP
+* composer
+* python
+* flask
 * webpack
-* bower
-* angular
-* mocha
-* Elm
 * AWS
 * Github Pages
 * Nginx reverse proxy
 * MongoDB
 * firebase
+* sqlite
 * markdown documentation
 
 ### Tools
 
-* Built with [VisualStudio Code](http://microsoft.com) (never thought I'd be using VS again!)
+* Built with [VisualStudio Code](http://microsoft.com)
 * Created with [create-react-app](https://github.com/facebookincubator/create-react-app) by [facebookincubator](https://github.com/facebookincubator)
 
 
