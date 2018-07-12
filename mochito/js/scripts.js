@@ -501,7 +501,7 @@ var Mochito = {
 		var $tis = this;
 		
 		$("#contact_send").click(function(e){
-			e.preventDefault();
+			//e.preventDefault();
 
 			var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
 				name = $('#contact_name').val(),
@@ -565,54 +565,56 @@ var Mochito = {
 				$tis.sendingMail = true;
 				$('#contact_send i').addClass('icon-cog icon-spin');
 				$('#contact_send').addClass('disabled');
-				
-				$.ajax({
-					type: 'POST',
-					url: 'contact.php',
-					data: html,
-					success: function(msg){
-						$('#contact_send i').removeClass('icon-cog icon-spin');
-						$('#contact_send').removeClass('disabled');
+				this.href='mailto:iawnboi@emrys.cymru?subject=Cysylltwch|Contact&body='+JSON.stringify(html);
+				// ?subject=Email%20Subject  (e.g., mailto:example@email.com?subject=Email%20Subject).
+
+				// $.ajax({
+				// 	type: 'POST',
+				// 	url: 'contact.php',
+				// 	data: html,
+				// 	success: function(msg){
+				// 		$('#contact_send i').removeClass('icon-cog icon-spin');
+				// 		$('#contact_send').removeClass('disabled');
 						
-						if (msg === 'ok'){
-							$('#contact_send i').addClass('icon-ok').delay(1500).queue(function(next){
-								$(this).removeClass('icon-ok');
-								next();
-							});
-							$('#contact_send').addClass('btn-success').delay(1500).queue(function(next){
-								$(this).removeClass('btn-success');
-								next();
-							});
-							$('#form-contact')[0].reset();
-						}else{
-							$('#contact_send i').addClass('icon-remove').delay(1500).queue(function(next){
-								$(this).removeClass('icon-remove');
-								next();
-							});
-							$('#contact_send').addClass('btn-danger').delay(1500).queue(function(next){
-								$(this).removeClass('btn-danger');
-								next();
-							});
-						}
+				// 		if (msg === 'ok'){
+				// 			$('#contact_send i').addClass('icon-ok').delay(1500).queue(function(next){
+				// 				$(this).removeClass('icon-ok');
+				// 				next();
+				// 			});
+				// 			$('#contact_send').addClass('btn-success').delay(1500).queue(function(next){
+				// 				$(this).removeClass('btn-success');
+				// 				next();
+				// 			});
+				// 			$('#form-contact')[0].reset();
+				// 		}else{
+				// 			$('#contact_send i').addClass('icon-remove').delay(1500).queue(function(next){
+				// 				$(this).removeClass('icon-remove');
+				// 				next();
+				// 			});
+				// 			$('#contact_send').addClass('btn-danger').delay(1500).queue(function(next){
+				// 				$(this).removeClass('btn-danger');
+				// 				next();
+				// 			});
+				// 		}
 						
-						$tis.sendingMail = false;
-					},
-					error: function(){
-						$('#contact_send i').removeClass('icon-cog icon-spin');
-						$('#contact_send').removeClass('disabled');
+				// 		$tis.sendingMail = false;
+				// 	},
+				// 	error: function(){
+				// 		$('#contact_send i').removeClass('icon-cog icon-spin');
+				// 		$('#contact_send').removeClass('disabled');
 							
-						$('#contact_send i').addClass('icon-remove').delay(1500).queue(function(next){
-							$(this).removeClass('icon-remove');
-							next();
-						});
-						$('#contact_send').addClass('btn-danger').delay(1500).queue(function(next){
-							$(this).removeClass('btn-danger');
-							next();
-						});
+				// 		$('#contact_send i').addClass('icon-remove').delay(1500).queue(function(next){
+				// 			$(this).removeClass('icon-remove');
+				// 			next();
+				// 		});
+				// 		$('#contact_send').addClass('btn-danger').delay(1500).queue(function(next){
+				// 			$(this).removeClass('btn-danger');
+				// 			next();
+				// 		});
 						
-						$tis.sendingMail = false;
-					}
-				});
+				// 		$tis.sendingMail = false;
+				// 	}
+				// });
 			} else{
 				$('#contact_send i').removeClass('icon-cog icon-spin');
 				$('#contact_send').removeClass('disabled');
@@ -627,7 +629,7 @@ var Mochito = {
 				});
 			}
 			
-			return false;
+			// return false;
 		});
 	},
 	
