@@ -1,13 +1,13 @@
 # [emrys.cymru](http://emrys.cymru)
 Repo for my personal website. 
-Currently this is hosted by github.io.
+Currently this is hosted by github.io using ]github pages](https://pages.github.com/).
 
-I've set an A record for a subdomain [github.emrys.cyrmu](https://github.emrys.cymru) to point to (204.232.175.78)
+I've set an CNAME record for a subdomain [github.emrys.cymru](https://github.emrys.cymru) to point to emrysr.github.io.
 
 This is then routed to this repo using the [CNAME](https://github.com/emrysr/emrysr.github.io/blob/master/CNAME) file.
 
 ## Objective
-This my personal website to show off my work
+This my personal website to show off my work. any serverside processing must be done via apis as github pages doesn't offer this service. 
 
 **[See it here](http://github.emrys.cymru/)**
 
