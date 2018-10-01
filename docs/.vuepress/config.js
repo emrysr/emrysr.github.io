@@ -11,5 +11,8 @@ module.exports = {
             { text: 'Github', link: 'https://github.com/dwalkr/serverless-autopublish' }
         ],
         sidebar: 'auto'
+    },
+    build: {
+        output_directory: 'dist'
     }
 }
